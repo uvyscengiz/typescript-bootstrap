@@ -1,0 +1,31 @@
+{
+  "name": "uveys-starter",
+  "version": "1.0.0",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "prestart": "rimraf dist",
+    "start": "tsc && node -r dotenv/config -r tsconfig-paths/register dist/main.js",
+    "start:dev": "ts-node-dev -r dotenv/config -r tsconfig-paths/register src/main.ts | bunyan"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.8",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "prettier": "^3.0.3",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "dotenv": "^16.3.1",
+    "env-var": "^7.4.1",
+    "rimraf": "^5.0.1"
+  }
+}
